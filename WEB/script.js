@@ -1,7 +1,7 @@
 // 假設這是動態生成的公告資訊
 const announcements = [
-    { title: "校慶活動", content: "我們的校慶將於下個月舉行，敬請期待！" },
-    { title: "新課程開設", content: "我們將開設一門新的課程，詳細信息請查看課程頁面。" },
+    { title: "活動", content: "敬請期待！" },
+    { title: "活動", content: "敬請期待！" },
     // 可以添加更多的公告
 ];
 
@@ -74,62 +74,4 @@ function updateProgressBar() {
 document.addEventListener("DOMContentLoaded", function () {
     showSlides();
   });
-
-var slideIndex = 0;
-var slideInterval;
-var progressBar = document.getElementById("progress-bar");
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function startSlideshow() {
-  slideInterval = setInterval(showSlides, 3000); // 設定間隔為3秒
-}
-
-function stopSlideshow() {
-  clearInterval(slideInterval);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-
-  if (n === undefined) {
-    // 自動播放時
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = "block";
-  } else {
-    // 手動切換圖片時
-    if (n < 1) {
-      slideIndex = slides.length;
-    } else if (n > slides.length) {
-      slideIndex = 1;
-    } else {
-      slideIndex = n;
-    }
-
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-  }
-
-  // 更新進度條
-  updateProgressBar();
-}
-
-function updateProgressBar() {
-  var progress = (slideIndex / document.getElementsByClassName("mySlides").length) * 100;
-  progressBar.style.width = progress + "%";
-}
-document.addEventListener("DOMContentLoaded", function () {
-    showSlides();
-  });
+  
