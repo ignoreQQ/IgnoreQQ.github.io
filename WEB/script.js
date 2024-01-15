@@ -15,3 +15,30 @@ announcements.forEach(announcement => {
 });
 
 // 這裡可以添加其他 JavaScript 互動的部分，例如表單驗證等
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  // 將所有照片設為不可見
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  // 自增索引，顯示下一張照片
+  slideIndex++;
+  
+  // 如果超過照片總數，重新從頭開始
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  
+  // 顯示當前照片
+  slides[slideIndex - 1].style.display = "block";
+  
+  // 設定下一次顯示的時間間隔（這裡是3000毫秒，即3秒）
+  setTimeout(showSlides, 3000);
+}
