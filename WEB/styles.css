@@ -13,6 +13,7 @@ header {
 
 nav ul {
     list-style: none;
+    text-align: center;
 }
 
 nav ul li {
@@ -28,6 +29,10 @@ nav a {
 
 section {
     padding: 20px;
+}
+
+section h1 {
+    text-align: center;
 }
 
 img {
@@ -75,3 +80,10 @@ footer {
     width: 0;
     background-color: #4caf50;
   }
+
+title{
+  width:auto;
+  height:auto;
+  text-align:center;
+  line-height:100px;
+}

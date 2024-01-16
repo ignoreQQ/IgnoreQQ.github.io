@@ -1,4 +1,4 @@
-// 假設這是動態生成的公告資訊
+// 動態生成的公告資訊
 const announcements = [
     { title: "活動", content: "敬請期待！" },
     { title: "活動", content: "敬請期待！" },
