@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'DFKai-sb', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +31,7 @@ section {
 }
 
 img {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
 }
 
